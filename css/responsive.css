@@ -1,0 +1,751 @@
+@media screen and (max-width: 1024px){
+    .mainMenu ul{
+        display: block;
+    }
+    .mainMenu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(10%);
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        overflow-y: auto;
+    }
+    .mainMenu.show{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        z-index: 22;
+    }
+    .toggle span{
+        display: block;
+        width: 32px;
+        height: 2px;
+        background-color: #000000;
+        z-index: 22;
+        transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+        margin: 6px 0;
+    }
+    .toggle.open span:nth-child(2){
+        width: 0;
+  
+    }
+    .toggle.open span:nth-child(1){
+        transform: rotate(45deg) translate(7px, 5px);
+    }
+    .toggle.open span:nth-child(3){
+        transform: rotate(-45deg) translate(7px, -5px);
+    }
+    .mainMenu li a{
+        display: block;
+        
+    }
+    .mainMenu ul{
+        margin-top: 140px;
+        padding: 0 40px;
+    }
+    .mainMenu li{
+        margin-bottom: 40px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 6px;
+    }
+    .mainMenu li a{
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .EfCargo {
+        padding-bottom: 30px;
+    }
+    .ABCrg {
+        min-height: 501px;
+    }
+    .EfCrg-cntnt h3{
+        font-size: 20px;
+    }
+    .EfCrg-cntnt p{
+        font-size: 16px;
+    }
+    .EfCrg-serv p{
+        font-size: 16px;
+    }
+    .cargoType h4 {
+        font-size: 14px;
+    }
+    .cargoType-Txt h4 {
+        font-size: 16px;
+        max-width: 220px;
+    }
+    .Ef-country img {
+        width: 19px;
+    }
+    .Ef-country span {
+        padding: 3px 13px;
+        font-size: 10px;
+    }
+    .Ef-country {
+        bottom: 157px;
+        right: 163px;
+    }
+    .uae {
+        bottom: 176px;
+        right: 218px;
+    }
+    .africa {
+        bottom: 100px;
+        right: 239px;
+    }
+    .europe {
+        top: 50px;
+    }
+    .connect p {
+        font-size: 16px;
+    }
+    .video {
+        height: 600px;
+    }
+    .efCrg-ftr {
+        overflow: hidden;
+    }
+    .FtrMenu::before{
+        width: 200px;
+      }
+      .Ftr-menuList {
+        gap: 24px;
+    }
+    /* ABOUT */
+    .why-Cnt {
+        padding: 24px 30px;
+    }
+}
+
+@media screen and (max-width:992px) { 
+    .toggle {
+        top: 25px;
+    }
+    .ABCrg{
+       display: none;
+    }
+    .cargoMobile{
+       padding-top: 50px;
+       display: block;
+    }
+    .mobBanner img{
+       width: 274px;
+       display: block;
+       margin: auto;
+    }
+    .Crg-txt {
+       max-width: 100%;
+       text-align: center;
+    }
+    .EfCrg-cntnt p {
+       font-size: 16px;
+       padding-bottom: 15px;
+    }
+    .EfCrg-cntnt .primaryBtn {
+        margin: auto;
+    }
+    .cargoType {
+        padding: 9px 10px;
+    }
+    .cargoType h4 {
+        font-size: 11px;
+    }
+    .cargoType-Txt {
+        left: 19px;
+    }
+    .cargoType-Txt h4 {
+        font-size: 13px;
+        max-width: 193px;
+    }
+    .video {
+        height: 100%;
+    }
+    .vdoTxt p {
+        font-size: 13px;
+        max-width: 260px;
+    }
+    .EfTrnds::before {
+        width: 141px;
+    }
+    .trndCnt h3 {
+        font-size: 17px;
+    }
+    .trndCnt p {
+        font-size: 13px;
+    }
+    .date p {
+        font-size: 13px;
+    }
+    .FtrMenu::before {
+        width: 141px;
+    }
+    .Ftr-menuList li a {
+        font-size: 13px;
+    }
+    .Ftr-logo img {
+        width: 165px;
+    }
+    .Ftr-cntNum a {
+        font-size: 14px;
+    }
+
+
+    /* SERVICES */
+    .servHead h2 {
+        font-size: 20px;
+    }
+    .EfCrg-Serv p {
+        font-size: 14px;
+    }
+    #hvrTxt{
+        font-size: 14px;
+      }
+      .Hvr-Serv p {
+        font-size: 14px;
+    }
+
+    /* CONTACT US */
+
+    .col-35{
+        width: 100%;
+      }
+      .col-30{
+        width: 100%;
+        position: relative;
+      }
+      .cntText{
+        position: relative;
+        top: 0;
+       text-align: center;
+       padding:0 20px 0;
+       color: #fff;
+      
+      }
+      .fndLctn{
+        width: 100%;
+        background-color: #44b4a1;
+        padding: 20px 0;
+      }
+      .cntText h3{
+        font-size: 22px;
+      }
+      .cntImg img{
+       display: none;
+      }
+      .cntImg::after{
+        padding-top:20px;
+      }
+
+      .Crg-cntct{
+        padding: 40px 0;
+        overflow: hidden;
+      }
+      .corporate {
+        padding: 10px 30px;
+        width: 250px;
+        margin: auto;
+    }
+    .CntctEf {
+        text-align: center;
+        padding-left: 0;
+    }
+    .CntctEf h3 {
+        font-size: 20px;
+        max-width: 100%;
+    }
+    .CntctEf p {
+        margin: auto;
+    }
+
+    /* ABOUT */
+    .VsnHead p {
+        padding: 13px 0;
+        font-size: 18px;
+    }
+    .EfcVsn h2 {
+        font-size: 35px;
+    }
+    .bnfts-list::before {
+        display: none;
+    }
+    .VsnHead::before {
+        top: 0;
+    }
+
+    /* MEDIA PAGE */
+    .EFC-Blg {
+        display: block ;
+        gap: 0;
+    }
+    .BlgImg {
+        width: fit-content;
+        height: 150px;
+    }
+    .BlgCnt{
+        padding-top: 10px;
+      }
+      .photo-contain {
+       display: block;
+    }
+    .gllrySec {
+        width: 100%;
+    }
+    .Ph-imgCnt {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+}
+
+@media(max-width:770px){
+    .logo {
+        padding: 16px 32px;
+    }
+    .cntNum a {
+        font-size: 14px;
+    }
+    .quote {
+        padding: 4px 10px;
+    }
+    .quote a {
+        font-size: 13px;
+    }
+    .call {
+        width: 25px;
+        height: 25px;
+    }
+    .call a{
+        font-size: 13px;
+    }
+    .toggle {
+        top: 30px;
+    }
+    .Cntry-Mp {
+        border-right: none;
+    }
+    .connect {
+        padding-left: 0;
+        text-align: center;
+    }
+    .LocateSec {
+        padding-bottom: 0;
+    }
+    .connect p {
+        padding-bottom: 10px;
+    }
+    .primaryBtn {
+        margin: auto;
+    }
+    .trnd-col{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .line{
+        margin: 0 10px;
+      }   
+      .FtrMenu {
+        padding: 20px 0;
+    }
+    .EfCopy{
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cpyTxt p{
+       text-align: center;
+       padding-bottom: 10px;
+      }
+      .FtrMenu::before {
+        top: 35px;
+        width: 250px;
+    }
+
+    /* SERVICES */
+   
+    .Hvr-Serv p {
+        font-size: 16px;
+    }
+    #hvrTxt{
+        font-size: 16px;
+      }
+      .EnquireSec{
+       padding: 50px 0;
+      }
+
+      /* ABOUT */
+      .EfcVsn {
+        max-width: 100%;
+        padding-top: 0;
+    }
+    .EfcVsn h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .VsnHead {
+        padding-left: 0;
+    }
+    
+    .ChsRw{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* MEDIA PAGE */
+    .VdoSec {
+        margin: auto;
+    }
+    .VdoCnt {
+        padding-bottom: 25px;
+        padding-left: 40px;
+    }
+    .imgGllry {
+        width: 50%;
+        height: auto;
+    }
+    .Ph-imgCnt {
+        padding-top: 14px;
+    }
+    .careerSec .col-md-6::before{
+        display: none;
+    }
+    .whyWrkBlk{
+        margin-bottom: 30px;
+    }
+    .careerDetTitle h2{
+        font-size: 30px;
+    }
+    .careerSubmitSec p{
+        font-size: 18px;
+    }
+    .careerSubmitSec a{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:662px) {
+    .Ef-heroTxt {
+       display: none;
+    }
+    .EfMediaLnk{
+        display: none;
+    }
+    .EfMedia-mob{
+        display: inline-flex;
+       padding-top: 20px;
+      }
+      .EfMedia-mob li{
+        width: 30px;
+        height: 30px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin: 0 5px;
+      }
+      .EfMedia-mob li a{
+        color: #fff;
+      }
+    .ReqQt{
+        display: none;
+    }
+    .logo img {
+        width: 124px;
+    }
+    .logo {
+        width: 40%;
+    }
+    .heroTxt h1 {
+        font-size: 40px;
+    }
+    .heroTxt p {
+        font-size: 20px;
+    }
+    .EfMediaLnk {
+        top: 44%;
+    }
+    .cargoType h4 {
+        font-size: 16px;
+    }
+    .cargoType-Txt {
+        left: 22px;
+    }
+    .cargoType-Txt h4 {
+        font-size: 21px;
+        max-width: 100%;
+    }
+    .cargo-title h2 {
+        font-size: 31px;
+    }
+    .cargo-title p {
+        font-size: 16px;
+    }
+    .vdoTxt {
+        top: 18px;
+        left: 0;
+        padding: 0 15px;
+    }
+    .vdoTxt h3 {
+        font-size: 23px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .vdoTxt p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .line{
+        border-left: none;
+        border-right:none;
+        padding: 0 0;
+      }
+
+    /* SERVICES */
+
+    .servTxt h1 {
+        max-width: 400px;
+        font-size: 35px;
+    }
+    .servTxt h1 span {
+        font-size: 38px;
+    }
+    .VsnHead::before {
+        top: 0;
+        height: 1px;
+        width: 100% ;
+        display: block;
+    }
+    .Ftr-menuList li a {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:475px){
+    .servTxt h1 span {
+        font-size: 34px;
+    }
+    .servTxt h1 {
+        font-size: 30px;
+    }
+    .logo {
+        width: 50%;
+    }
+    .logo img {
+        width: 117px;
+    }
+   
+    .heroTxt p {
+        font-size: 18px;
+    }
+    .Ef-country {
+        bottom: 117px;
+        right: 119px;
+    }
+    .Ef-country span {
+        padding: 3px 8px;
+        font-size: 8px;
+    }
+    .uae {
+        bottom: 133px;
+        right: 163px;
+    } 
+    .europe {
+        top: 29px;
+    }
+    .africa {
+        bottom: 73px;
+        right: 177px;
+    }
+    .Ftr-menuList {
+        display: block; 
+        padding-top: 10px;
+        gap: 50px;
+    }
+    .FtrMenu::before{
+        display: none;
+      }
+      .ftrRw {
+        padding-left: 10px;
+    }
+
+      /* SERVICES */
+  
+      .servHead{
+        padding: 5px 0;
+        border: 1px solid #fff;
+      }
+      .servHead h2 {
+        font-size: 16px;
+    }
+    .EfCrg-Serv p {
+        font-size: 13px;
+    }
+    #hvrTxt{
+        padding: 8px 0;
+        font-size: 13px;
+      }
+      .Hvr-Serv p {
+        font-size: 14px;
+    }
+   
+    /* FAQ */
+    .faq-question h3 {
+        font-size: 17px;
+    }
+    .faq-answer h3 {
+        font-size: 17px;
+    }
+    .faq-answer p {
+        font-size: 16px;
+    }
+    .faq-answer.open {
+        max-height: fit-content;
+        padding: 15px 20px;
+        border: 1px solid #fff;
+      }
+
+      /* ABOUT */
+      .EfcVsn h2 {
+        font-size: 24px;
+        padding-bottom: 17px;
+    }
+    .VsnHead p {
+        font-size: 17px;
+    }
+    .paraCnt p {
+
+        font-size: 16px;
+        text-align: justify;
+    }
+    .bnfts-list {
+        padding: 10px ;
+    }
+    .bnfts-list h3 {
+        padding:0 0 5px ;
+        font-size: 19px;
+    }
+    .bnfts-list p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    /* MEDIA PAGE */
+    .servPara{
+        text-align: justify;
+    }
+    .blgHead h2 {
+        font-size: 27px;
+    }
+    .BlgTxt h3 a {
+        font-size: 17px;
+    }
+    .BlgTxt p {
+        font-size: 16px;
+    }
+    .bglDate p {
+      font-size: 17px;
+      }
+
+    .VdoCnt {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:375px){
+    /* .heroTxt h1 {
+        font-size: 34px;
+    } */
+    .cargoType h4 {
+        font-size: 13px;
+    }
+    .cargoType-Txt h4 {
+        font-size: 18px;
+    }
+    .cargo-title h2 {
+        font-size: 27px;
+    }
+    .Ef-country span {
+        padding: 3px 5px;
+    }
+    .Ef-country {
+        bottom: 96px;
+        right: 109px;
+    }
+    .Ef-country img {
+        width: 15px;
+    }
+    .uae {
+        bottom: 116px;
+        right: 141px;
+    }
+    .africa {
+        bottom: 66px;
+        right: 153px;
+    }
+    
+
+    /* SERVICES */
+    .servHead h2 {
+        font-size: 14px;
+    }
+    #hvrTxt{
+        padding: 3px 0;
+        font-size: 12px;
+      }
+      .Hvr-Serv p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .moreBtn{
+        padding: 5px 30px;
+        margin-top: 5px;
+      }
+    .moreBtn a{
+        font-size: 13px;      
+      }
+      .HvrEfct{
+        padding: 0 9px;
+      }
+
+      /* CONTACT US */
+
+      .cntText p {
+        font-size: 16px;
+    }
+    .cntText h3 {
+        font-size: 20px;
+    }
+
+    /* ABOUT */
+    .EfcVsn h2 {
+        font-size: 20px;
+        padding-bottom: 13px;
+    }
+    .VsnHead h2 {
+        font-size: 36px;
+        padding-top: 8px;
+    }
+    .VsnHead p {
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    .paraCnt h3 {
+        padding: 10px 0;
+        font-size: 24px;
+    }
+}
+
