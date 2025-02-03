@@ -568,7 +568,7 @@ padding-bottom: 80px;
 
 }
 .why-Cnt{
-  padding: 0 40px;
+  padding: 0 60px;
 }
 .chooseTxt{
   background-color: #fff;
@@ -889,10 +889,12 @@ text-transform: capitalize;
   margin: auto;
 }
 .col-35{
-  width: 35%;
+  /* width: 35%; */
+  width: 33.3%;
 }
 .col-30{
-  width: 30%;
+  /* width: 30%; */
+  width: 33.3%;
   position: relative;
 }
 
@@ -908,7 +910,8 @@ text-transform: capitalize;
   background-color: #282828;
   color: #fff;
   padding: 7px 30px;
-  width: 200px;
+  width: 270px;
+  /* width: 200px; */
   text-align: center;
   /* margin-left: -18px; */
   font-weight: 700;
@@ -917,7 +920,7 @@ text-transform: capitalize;
 .CntctEf{
   width: 100%;
   color: #fff;
-  padding-left: 50px;
+  padding-left: 90px;
   padding-top: 20px;
 }
 .CntctEf h3{
@@ -970,12 +973,15 @@ text-transform: capitalize;
  padding:40px 20px 0;
 
 }
+.cntText h3{
+  font-size: 28px;
+}
 .cntText p{
   padding-top: 10px;
   font-weight: 200;
 }
 .form{
-  padding:0 30px;
+  padding:0 60px;
   font-family: var(--primary-font);
 }
 .inputBx .label{
@@ -1066,13 +1072,14 @@ font-weight: 400;
   }
   .EFC-Blg{
     display: flex;
-    gap: 20px;
+    gap: 28px;
     padding: 20px 0;
   }
   .BlgImg{
     border: 1px solid #fff;
     width: 350px;
     height: 100px;
+    margin-top: 6px;
   }
   .BlgImg img{
     width: 100%;
