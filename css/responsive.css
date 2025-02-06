@@ -22,7 +22,7 @@
     .toggle{
         display: block;
         position: absolute;
-        top: 40px;
+        top: 26px;
         right: 50px;
         z-index: 22;
     }
@@ -142,6 +142,22 @@
     .cntText p{
         font-size: 16px;
     }
+
+    /* MEDIA */
+    .photo-contain {
+        display: block;
+     }
+     .gllrySec {
+        width: 100%;
+    }
+    
+    .Ph-imgCnt {
+        width: 100%;
+        padding-left: 0;
+    }
+    .imgGllry{
+        width: 160px;
+      }
 }
 
 @media screen and (max-width:992px) { 
@@ -240,6 +256,9 @@
         width: 100%;
         position: relative;
       }
+      .TxtCont {
+        max-width: 100%;
+    }
       .cntText{
         position: relative;
         top: 0;
@@ -311,16 +330,8 @@
     .BlgCnt{
         padding-top: 10px;
       }
-      .photo-contain {
-       display: block;
-    }
-    .gllrySec {
-        width: 100%;
-    }
-    .Ph-imgCnt {
-        width: 100%;
-        padding-left: 0;
-    }
+   
+
 
     /* AIR TRANSPORTATION */
     .servIcon img {
@@ -356,7 +367,10 @@
         font-size: 13px;
     }
     .toggle {
-        top: 30px;
+        top: 20px;
+    }
+    .scrolled .toggle{
+        top: 35px;
     }
     .Cntry-Mp {
         border-right: none;
@@ -393,8 +407,7 @@
        padding-bottom: 10px;
       }
       .FtrMenu::before {
-        top: 35px;
-        width: 250px;
+        display: none;
     }
 
     /* SERVICES */
@@ -521,6 +534,9 @@
     }
     .EfMediaLnk{
         display: none;
+    }
+    .homeMob{
+        display: none !important;
     }
     .EfMedia-mob{
         display: inline-flex;
@@ -709,7 +725,7 @@
     .paraCnt p {
 
         font-size: 16px;
-        text-align: justify;
+        /* text-align: justify; */
     }
     .bnfts-list {
         padding: 10px ;
@@ -720,13 +736,11 @@
     }
     .bnfts-list p {
         font-size: 16px;
-        text-align: justify;
+        /* text-align: justify; */
     }
 
     /* MEDIA PAGE */
-    .servPara{
-        text-align: justify;
-    }
+   
     .blgHead h2 {
         font-size: 27px;
     }
@@ -772,6 +786,10 @@
     .bookCrg img {
         width: 84px;
     }
+      /* CONTACT US */
+      .form {
+        padding: 0 30px;
+      }
 }
 
 @media(max-width:375px){

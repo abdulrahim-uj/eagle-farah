@@ -37,8 +37,9 @@ header{
 .mainMenu a{
     color: #000000;
     position: relative;
-    font-size: 19px;
+    font-size: 17px;
     font-family: var(--nav-font);
+    text-transform: uppercase;
 }
 .mainMenu a:hover{
   color: #32ab9f;
@@ -49,7 +50,7 @@ header{
   position: relative;
 }
 .subMenu{
-  width: 250px;
+  width: 300px;
   position: absolute;
   top: 25px;
   background-color: #32ab9f;
@@ -136,7 +137,7 @@ header{
     justify-content: space-between;
 }
 .toggle{
-    /* position: relative; */
+    position: relative;
     display: none; 
     cursor: pointer;
 }
@@ -740,7 +741,7 @@ padding-bottom: 80px;
   border: 1px solid #fff;
 }
 .servHead h2{
-text-transform: capitalize;
+text-transform: uppercase;
 }
 .EfCrg-Serv p{
   padding-top: 5px;
@@ -1218,11 +1219,15 @@ text-transform: capitalize;
   top: 20px;
  text-align: center;
  padding:40px 20px 0;
- max-width: 300px;
+ display: flex;
+  justify-content: center;
+  width: 100%;
 
 }
 .TxtCont{
+  max-width: 300px;
   margin: auto;
+  display: block;
 }
 .cntText h3{
   font-size: 28px;
@@ -1283,9 +1288,8 @@ font-weight: 400;
 }
 .CrgoLct{
   overflow: hidden;
-  padding-bottom:56%;
   position:relative;
-  height:0;
+  height:600px;
   }
   .CrgoLct iframe{
   left:0;
@@ -1559,6 +1563,15 @@ color: #fff;
 }
 
 /* CAREER PAGE */
+.Ef-careerHero{
+  background-image: url('../assets/careers/careerBnr.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 .CareerHero h1{
   max-width: 650px !important;
 }
