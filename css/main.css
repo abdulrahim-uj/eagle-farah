@@ -5,12 +5,34 @@ header{
     top: 10px;
     left: 0;
     width: 100%;
+    /* background-color: #fff; */
 }
-.mainMenu ul{
+
+.headerContain.scrolled {
+  background-color: white;
+  box-shadow: 0 0 10px #ccc;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+}
+.scrolled .logo img{
+  width: 105px;
+}
+.scrolled .mainMenu .mainul{
+  padding-bottom: 0;
+}
+.scrolled .ReqQt{
+  padding-bottom: 0;
+}
+.scrolled .logo{
+  padding: 0;
+}
+.mainMenu .mainul{
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+
 }
 .mainMenu a{
     color: #000000;
@@ -20,6 +42,50 @@ header{
 }
 .mainMenu a:hover{
   color: #32ab9f;
+}
+
+/* Submenu list */
+.SubList {
+  position: relative;
+}
+.subMenu{
+  width: 250px;
+  position: absolute;
+  top: 25px;
+  background-color: #32ab9f;
+  display: block ;
+  padding: 15px 20px;
+  border-radius:8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #6a6a6a;
+}
+.SubList:hover .subMenu{
+  opacity: 1;
+  visibility: visible;
+} 
+.subMenu a {
+  color: #ffffff !important;
+  padding: 10px;
+  display: block;
+  transition: all 0.3s;
+}
+
+
+.subMenu a:hover {
+  color: #000 !important;
+}
+.dropdown-arrow {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 4px;
+  transition: all .3s ease;
+  cursor: pointer;
+  font-size: 13px;
+}
+.dropdown-arrow:after {
+  content: "";
 }
 .logo{
   width: 25%;
@@ -44,7 +110,7 @@ header{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 .Ef-cntct{
   display: flex;
@@ -70,17 +136,17 @@ header{
     justify-content: space-between;
 }
 .toggle{
-    position: relative;
+    /* position: relative; */
     display: none; 
     cursor: pointer;
 }
-.toggle span{
+/* .toggle span{
     width: 32px;
     height: 2px;
     display: block;
     background-color: #fff;
     margin: 6px 0;
-}
+} */
 
 
 
@@ -629,7 +695,7 @@ padding-bottom: 80px;
 }
 
 .servTxt h1{
-  max-width: 640px;
+  max-width: 500px;
   font-size: 30px;
   font-weight: 200;
   color: #fff;
@@ -638,7 +704,7 @@ padding-bottom: 80px;
 .servTxt h1 span{
   font-size: 50px;
   font-weight: 700;
-  display: block; /* MS EDIT */
+  /* display: block;  */
 }
 
 .MEDIA{
@@ -771,6 +837,184 @@ text-transform: capitalize;
   text-align: center;
 }
 
+/* AIR TRANSPORTATION SERVICE INNER PAGE */
+.Ef-AirHero{
+  background-image: url('../assets/AirTransporation/airBnr.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
+
+.servInnerTxt h1{
+  max-width: 550px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+.servInnerTxt h1 span{
+  font-size: 50px;
+  font-weight: 700;
+  display: block; /* MS EDIT */
+}
+.AirCrgHead h2{
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.AirCrg-container{
+  background-color: #32ab9f;
+  padding: 60px 0;
+}
+.servIcon img{
+  padding-bottom: 10px;
+  width: 100px;
+}
+.AirCrgCnt h3{
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 10px;
+  max-width: 150px;
+}
+.AirCrgCnt p{
+  font-size: 17px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.SolnHead h2{
+  color: #000;
+}
+/* .CrgSolun{
+  padding-bottom: 80px;
+} */
+.SolnList{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px ;
+}
+.SolnList img{
+  width: 43px;
+}
+.SolnCnt h3{
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.SolnCnt p{
+  font-weight: 200;
+  width: 100%;
+}
+.BkAirCrgo{
+  overflow: hidden;
+}
+.BkRw{
+  justify-content: space-between;
+}
+.bookWth{
+  background-color: #d1d1d1;
+
+}
+.CrgBk{
+  padding: 60px 0;
+}
+.bookCrg{
+  text-align: center;
+}
+.bookCrg img{
+  width: 100px;
+}
+.BkCnt h2{
+  text-align: center;
+  font-weight: 200;
+  font-size: 28px;
+  padding-top: 10px;
+}
+.BkCnt h2 span{
+  font-weight: 700;
+
+}
+.CnctWth{
+  background-color: #32ab9f;
+  display: flex;
+  align-items: center;
+}
+.BkngTxt{
+  padding: 60px 60px;
+}
+.BkngTxt p{
+  font-weight: 200;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.cnctBtn{
+  background-color: #000;
+  border-radius: 8px;
+  padding: 12px 17px;
+  width: 230px;
+}
+.cnctBtn a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  gap: 15px;
+  font-size: 18px;
+}
+.cnctBtn a img{
+  width: 34px;
+}
+
+/* MARITIME TRANSPORTATION */
+.MariTrans h3{
+  max-width: 163px;
+  height: 91px;
+}
+
+/* CARGO PROCUREMENT */
+.CrgSolunhd h3{
+  max-width: 209px !important;
+}
+.indusServ{
+  padding-bottom: 80px;
+}
+.industries{
+  text-align: center;
+}
+.industries li{
+  padding: 5px 0;
+  font-weight: 200;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+}
+.industries li span{
+  font-weight: 700;
+}
+
+/* DELIVERY SERVICES */
+.delSolunhd h3{
+  max-width: 120px !important;
+}
+.LogisticsTxt p{
+  text-align: center;
+  font-weight: 200;
+}
+/* GROUND TRANSPORTATION */
+.GrndCrg h3{
+  max-width: 210px;
+}
+.GrndTrans{
+  padding-top: 0;
+}
+
 /* FAQ PAGE */
 .Ef-faqHero{
   background-image: url('../assets/faq/FaqBnr.jpg');
@@ -852,6 +1096,9 @@ text-transform: capitalize;
   height: 70vh;
   min-height: 500px;
   position: relative;
+}
+.NetHeroTxt h1{
+  max-width: 430px !important;
 }
 .CrgNtwrks{
   padding-top: 40px;
@@ -971,7 +1218,11 @@ text-transform: capitalize;
   top: 20px;
  text-align: center;
  padding:40px 20px 0;
+ max-width: 300px;
 
+}
+.TxtCont{
+  margin: auto;
 }
 .cntText h3{
   font-size: 28px;
@@ -1308,7 +1559,9 @@ color: #fff;
 }
 
 /* CAREER PAGE */
-
+.CareerHero h1{
+  max-width: 650px !important;
+}
 .careerSec{
   background-color: #32ab9f;
  padding: 100px 0;
