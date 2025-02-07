@@ -63,3 +63,16 @@ $('.dropdown-arrow').click(function(e){
   e.preventDefault();
   $('.subMenu').slideToggle()
 });
+
+function togglePlayPause() {
+  var video = document.getElementById("myVideo");
+  var playButton = document.querySelector(".play-button");
+
+  if (video.paused) {
+      video.play();
+      playButton.style.display = "none"; // Hide play button when playing
+  } else {
+      video.pause();
+      playButton.style.display = "block"; // Show play button when paused
+  }
+}

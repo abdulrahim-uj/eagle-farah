@@ -1,4 +1,13 @@
 @media screen and (max-width: 1024px){
+    .scrolled .logo {
+        width: 25%;
+    }
+    .logo{
+        width: 25%;
+      }
+      .logo img{
+        width: 160px;
+    }
     .mainMenu{
         position: fixed;
         width: 100%;
@@ -123,8 +132,12 @@
     .connect p {
         font-size: 16px;
     }
-    .video {
-        height: 600px;
+    .Crprt-video {
+        position: relative;
+        width: 100vw;
+        height: auto    ;
+        overflow: hidden;
+        cursor: pointer;
     }
     .efCrg-ftr {
         overflow: hidden;
@@ -388,6 +401,9 @@
     .primaryBtn {
         margin: auto;
     }
+    .cargoType h4 {
+        font-size: 16px;
+    }
     .trnd-col{
         padding-top: 20px;
         padding-bottom: 20px;
@@ -412,6 +428,9 @@
     .Ftr-menuList{
         gap: 40px;
       }
+      .Ftr-menuList li a {
+        font-size: 16px;
+    }
     /* SERVICES */
    
     .Hvr-Serv p {
@@ -531,6 +550,9 @@
 
 
 @media screen and (max-width:662px) {
+    .scrolled .logo {
+        width: 50%;
+    }
     .EfHero img{
         min-height: 500px;
       }
@@ -599,19 +621,10 @@
     .cargo-title p {
         font-size: 16px;
     }
-    .vdoTxt {
-        top: 18px;
-        left: 0;
-        padding: 0 15px;
-    }
-    .vdoTxt h3 {
-        font-size: 23px;
-        max-width: 100%;
-        text-align: center;
-    }
-    .vdoTxt p {
-        max-width: 100%;
-        text-align: center;
+    .play-button {
+        transform: translate(-49%, -15%);
+        font-size: 31px;
+        padding: 9px 16px;
     }
     .line{
         border-left: none;
