@@ -65,6 +65,9 @@ header{
   position: fixed;
   top: 0;
 }
+.scrolled .logo{
+  width: 18%;
+}
 .scrolled .logo img{
   width: 105px;
 }
@@ -80,7 +83,7 @@ header{
 .mainMenu .mainul{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     padding-bottom: 60px;
 
 }
@@ -141,7 +144,7 @@ header{
   content: "";
 }
 .logo{
-  width: 25%;
+  width: 22%;
   background-color: #fff;
   padding: 10px;
   border-bottom-right-radius: 25px;
@@ -180,8 +183,8 @@ header{
   justify-content: center;
 }
 .cntNum a{
-  font-family: var(--nav-font);
-  font-size: 17px;
+  font-family: var(--primary-font);
+  font-size: 16px;
 }
 .hdrw{
     display: flex;
@@ -217,7 +220,7 @@ header{
 .Ef-heroTxt{
   position: absolute;
   left: 60px;
-  bottom: 230px;
+  bottom: 180px;
 }
 .heroTxt h1{
   max-width: 720px;
@@ -572,6 +575,10 @@ position: relative;
   border-top: 1px solid #2a2a2a;
 padding-top: 50px;
 padding-bottom: 80px;
+}
+.client img{
+ display: block;
+ margin: auto;
 }
 .clients-slider{
   display: flex;
