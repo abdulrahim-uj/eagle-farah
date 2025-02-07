@@ -1,3 +1,53 @@
+/* PRELOADER */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: opacity 1s ease-out;
+}
+
+#spinner {
+  width: 100px;
+  height: 100px;
+  /* border: 4px solid #33ab9f;
+  border-top: 4px solid #2dd8c7; */
+  background-color: #33ab9f;
+  border-radius: 50%;
+  animation: spin 1s ease-out;
+  position: relative;
+}
+
+
+.preloader-logo {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity .8s ease-out, transform 1s ease-out;
+  display: none; 
+
+}
+.preloader-logo  img{
+  width: 130px;
+
+}
+@keyframes spin {
+  0% { transform: scale(0) ; } 
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+/* Hide the main page content initially */
+#EfcPage {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
 /* HEADER */
 header{
     position: absolute;
@@ -37,9 +87,10 @@ header{
 .mainMenu a{
     color: #000000;
     position: relative;
-    font-size: 17px;
-    font-family: var(--nav-font);
+    font-size: 15px;
+    font-family: var(--primary-font);
     text-transform: uppercase;
+    font-weight: 400;
 }
 .mainMenu a:hover{
   color: #32ab9f;
@@ -50,7 +101,7 @@ header{
   position: relative;
 }
 .subMenu{
-  width: 300px;
+  width: 350px;
   position: absolute;
   top: 25px;
   background-color: #32ab9f;
@@ -71,6 +122,7 @@ header{
   padding: 10px;
   display: block;
   transition: all 0.3s;
+  letter-spacing: .5px;
 }
 
 
@@ -165,7 +217,7 @@ header{
 .Ef-heroTxt{
   position: absolute;
   left: 60px;
-  bottom: 180px;
+  bottom: 230px;
 }
 .heroTxt h1{
   max-width: 720px;
@@ -451,24 +503,19 @@ position: relative;
   height: 100%;
   object-fit: cover;
  }
- .vdoTxt{
-  position: absolute;
-  top: 40%;
-  left: 60px;
-  color: #fff;
- 
- }
- .vdoTxt h3{
-  font-weight: 700;
-  font-size: 28px;
-  max-width: 300px;
- }
- .vdoTxt p{
-  font-weight: 200;
-  font-size: 17px;
-  padding-top: 5px;
-  max-width: 400px;
- }
+ /* .video {
+  width: 100vw; 
+  height: 800px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+} */
+
 
  .EfCrg-trnds{
   padding-bottom: 50px;
@@ -1522,7 +1569,7 @@ color: #fff;
 .Ftr-menuList{
   display: flex;
   padding-top: 10px;
-  gap: 50px;
+  gap: 36px;
 }
 .Ftr-menuList li{
   padding: 8px 0  ;
@@ -1530,7 +1577,7 @@ color: #fff;
 .Ftr-menuList li a{
   color: #fff;
   font-weight: 200;
-  letter-spacing: .8px;
+  letter-spacing: 1px;
 }
 .EfCopy{
   border-top: 1px solid #fff;

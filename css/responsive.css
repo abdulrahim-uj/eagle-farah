@@ -409,7 +409,9 @@
       .FtrMenu::before {
         display: none;
     }
-
+    .Ftr-menuList{
+        gap: 40px;
+      }
     /* SERVICES */
    
     .Hvr-Serv p {

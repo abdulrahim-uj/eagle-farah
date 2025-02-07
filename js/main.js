@@ -1,15 +1,30 @@
 
+        // PRELOADER
+        setTimeout(() => {
+          document.getElementById("spinner").style.display = "none"; 
+          const logo = document.querySelector(".preloader-logo");
+          logo.style.display = "block"; 
+          setTimeout(() => {
+            logo.style.opacity = "1";
+            logo.style.transform = "scale(1)";
+          }, 50);
+        
+          setTimeout(() => {
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(() => {
+              document.getElementById("preloader").style.display = "none"; 
+              document.getElementById("EfcPage").style.opacity = "1";
+            }, 1000);
+          }, 2000); 
+        }, 1000); 
+        
+      
 $('.toggle').click(function(){
   $('.toggle').toggleClass('open');
   $('.mainMenu').toggleClass('show')
 })
 
-// $('.toggle').click(function(){
-//   $('.contactSlide').addClass('show')
-// });
-// $('.clseMenu').click(function(){
-//   $('.contactSlide').removeClass('show')
-// })
+
 
 
 window.addEventListener("scroll", function() {
