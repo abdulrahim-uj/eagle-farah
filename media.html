@@ -103,6 +103,7 @@
                       <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                       <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
                       <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
                     </div>
                 </div>
             </div>
@@ -113,8 +114,11 @@
               <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
               <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
               <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
             </div>
-
+            <div class="wtsapp">
+                <a href="" class="wtsappIcon"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
         </div>
         </section>
 
@@ -317,9 +321,11 @@
                 <div class="videos-div">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="VdoSec"data-aos="fade-in"
-                        data-aos-duration="1000">
-                            <img src="assets/media/video.jpg" alt="">
+                        <div class="media-video" onclick="togglePlayPause()">
+                            <video id="myVideo" poster="" loop>
+                                <source src="assets/media/video1.mov" type="video/mp4">
+                            </video>
+                            <div class="play-button Mda-play" onclick="playVideo()"><i class="fa-solid fa-play"></i></div>
                         </div>
                         <div class="VdoCnt">
                             <p>Album</p>
@@ -329,9 +335,11 @@
 
                     </div>
                     <div class="col-md-4">
-                        <div class="VdoSec" data-aos="fade-in"
-                        data-aos-duration="1000">
-                            <img src="assets/media/video.jpg" alt="">
+                        <div class="media-video" onclick="togglePlayPause()">
+                            <video id="myVideo" poster="" loop>
+                                <source src="assets/media/video2.mov" type="video/mp4">
+                            </video>
+                            <div class="play-button Mda-play" onclick="playVideo()"><i class="fa-solid fa-play"></i></div>
                         </div>
                         <div class="VdoCnt">
                             <p>Album</p>
@@ -341,9 +349,11 @@
 
                     </div>
                     <div class="col-md-4">
-                        <div class="VdoSec" data-aos="fade-in"
-                        data-aos-duration="1000">
-                            <img src="assets/media/video.jpg" alt="">
+                        <div class="media-video" onclick="togglePlayPause()">
+                            <video id="myVideo" poster="" loop>
+                                <source src="assets/media/video3.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-button Mda-play" onclick="playVideo()"><i class="fa-solid fa-play"></i></div>
                         </div>
                         <div class="VdoCnt">
                             <p>Album</p>

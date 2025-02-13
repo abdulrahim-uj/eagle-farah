@@ -64,15 +64,42 @@ $('.dropdown-arrow').click(function(e){
   $('.subMenu').slideToggle()
 });
 
-function togglePlayPause() {
-  var video = document.getElementById("myVideo");
-  var playButton = document.querySelector(".play-button");
+function togglePlayPauseVdo() {
+  var video = document.getElementById("CrgVideo");
+  var playButton = document.querySelector(".play");
 
   if (video.paused) {
       video.play();
-      playButton.style.display = "none"; // Hide play button when playing
+      playButton.style.display = "none"; 
   } else {
       video.pause();
-      playButton.style.display = "block"; // Show play button when paused
+      playButton.style.display = "block"; 
   }
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".media-video").forEach(function (videoContainer) {
+      let video = videoContainer.querySelector("video");
+      let playButton = videoContainer.querySelector(".play-button");
+
+      videoContainer.addEventListener("click", function () {
+          if (video.paused) {
+             
+              document.querySelectorAll("video").forEach(function (v) {
+                  if (v !== video) {
+                      v.pause();
+                      v.parentElement.querySelector(".play-button").style.display = "block";
+                  }
+              });
+
+              video.play();
+              playButton.style.display = "none"; 
+          } else {
+              video.pause();
+              playButton.style.display = "block"; 
+          }
+      });
+  });
+});

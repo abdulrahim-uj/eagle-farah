@@ -207,6 +207,34 @@ header{
 
 
 /* HERO */
+.wtsapp{
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 9999;
+}
+.wtsappIcon{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wtsappIcon i{
+  color: #fff;
+  font-size: 39px;
+}
+.wtsappIcon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
 .heroSec{
   padding-top: 100px;
   position: relative;
@@ -215,7 +243,7 @@ header{
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  min-height: 700px;
+  min-height: 600px;
 }
 .Ef-heroTxt{
   position: absolute;
@@ -270,7 +298,7 @@ header{
 .EfMediaLnk{
   position: absolute;
   right: 20px;
-  top: 43%;
+  top: 35%;
   border: 2px solid #fff;
   padding:5px ;
   border-radius: 15px;
@@ -480,9 +508,6 @@ position: relative;
   color: #2a2a2a;
 }
 
-.Crprt-video{
-  padding-top: 50px;
-}
 .Crprt-video::before {
   content: "";
   position: absolute;
@@ -495,11 +520,13 @@ position: relative;
 }
 
 .Crprt-video {
+  padding-top: 50px;
   position: relative;
   width: 100vw;  
   height: 100vh;
   overflow: hidden;
   cursor: pointer;
+  /* z-index: -1; */
 }
 
 .Crprt-video video {
@@ -508,7 +535,21 @@ position: relative;
   object-fit: cover; 
   display: block;
 }
-
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  /* background: #000; */
+  border: 2px solid #fff;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50%;
+  /* cursor: pointer; */
+  transition: 0.3s;
+  z-index: 22;
+}
 .play-button {
   position: absolute;
   top: 50%;
@@ -776,7 +817,7 @@ padding-bottom: 80px;
 }
 
 .MEDIA{
-  top: 30%;
+  top: 28%;
 }
 .servPara{
   padding-top: 30px;
@@ -899,7 +940,9 @@ text-transform: uppercase;
 .PrjDiv{
   height: 100%;
   background-color: #cddbe5;
-  padding: 20px 0;
+}
+.PrjDiv img{
+  height: 100%;
 }
 .PrjDiv h3{
   text-align: center;
@@ -907,7 +950,7 @@ text-transform: uppercase;
 
 /* AIR TRANSPORTATION SERVICE INNER PAGE */
 .Ef-AirHero{
-  background-image: url('../assets/AirTransporation/airBnr.jpg');
+  background-image: url('../assets/AirTransporation/banner_airtransportation.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1042,12 +1085,30 @@ text-transform: uppercase;
 }
 
 /* MARITIME TRANSPORTATION */
+.Ef-MariHero{
+  background-image: url('../assets/AirTransporation/banner_maritime.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 .MariTrans h3{
   max-width: 163px;
   height: 91px;
 }
 
 /* CARGO PROCUREMENT */
+.Ef-ProcuHero{
+  background-image: url('../assets/AirTransporation/banner_procurement.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 .CrgSolunhd h3{
   max-width: 209px !important;
 }
@@ -1066,8 +1127,36 @@ text-transform: uppercase;
 .industries li span{
   font-weight: 700;
 }
-
+/* PROJECT CARGO MANAGEMENT */
+.Ef-PrjCrgHero{
+  background-image: url('../assets/AirTransporation/banner_project.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
+/* AIR CHARTERING */
+.Ef-AirChtgHero{
+  background-image: url('../assets/AirTransporation/banner_airchartering.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 /* DELIVERY SERVICES */
+.Ef-DelvrHero{
+  background-image: url('../assets/AirTransporation/banner_delivery.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 .delSolunhd h3{
   max-width: 120px !important;
 }
@@ -1075,7 +1164,38 @@ text-transform: uppercase;
   text-align: center;
   font-weight: 200;
 }
+
+/* CUSTOME FACILITATION */
+.Ef-CustmHero{
+  background-image: url('../assets/AirTransporation/banner_customs.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px; 
+  position: relative;
+}
+
+/* STORAGE SOLUTIONS */
+.Ef-StrSolnHero{
+  background-image: url('../assets/AirTransporation/banner_storage.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 /* GROUND TRANSPORTATION */
+.Ef-GrndHero{
+  background-image: url('../assets/AirTransporation/banner_ground.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  position: relative;
+}
 .GrndCrg h3{
   max-width: 210px;
 }
@@ -1511,15 +1631,39 @@ font-weight: 400;
 .videos-div{
   padding: 40px 0 20px;
 }
-  .VdoSec{
-    width: fit-content;
-    height: auto;
-  }
-  .VdoSec img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+/* 
+.media-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: 1; 
+} */
+
+.media-video {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.media-video  video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+.Mda-play {
+  font-size: 29px;
+  padding: 5px 12px;
+}
+
+.play-button:hover {
+  background: #373737;
+  opacity: 0.8;
+}
   .VdoCnt  {
     padding-top: 25px;
   }
@@ -1710,3 +1854,5 @@ color: #fff;
   padding-bottom: 80px;
   padding-top: 60px;
 }
+
+
